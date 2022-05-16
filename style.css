@@ -22,7 +22,7 @@ form h3{
     text-align: center;
 }
 
-form .form-container{
+form .input-container{
     position: relative;
 }
 
@@ -34,17 +34,18 @@ form .input-container input, input[type="submit"] {
 
 form .input-container input {
     border: 1px solid grey;
-    color: rgb(97, 96, 96);
+    color: rgb(194, 189, 189);
     padding:  0 25px;
 
 }
 
 form .input-container input::placeholder {
-    color: rgb(191, 191, 194);
+    color: rgb(124, 124, 126);
 }
 
 svg {
     position: absolute;
     right: 0;
-    top:  calc(50% - 12px);
+    top: calc(50% - 12px);
+    color: rgb(124, 124, 126);
 }

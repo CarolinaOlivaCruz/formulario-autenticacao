@@ -11,7 +11,7 @@ body{
 .form-container{
     background: rgb(250, 249, 249);
     margin: 150px auto;
-    width: 400px;
+    width: 400px; 
 }
 
 form{

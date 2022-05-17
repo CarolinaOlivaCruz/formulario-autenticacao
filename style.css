@@ -3,7 +3,7 @@ body{
     background: rgb(184, 183, 183);
 }
 
-/*Para alinhar a margin e padding e que os elementos fieuem do mesmo tamanho é preciso usar border-box*/
+/*Para alinhar a margin e padding e que os elementos fiquem do mesmo tamanho é preciso usar border-box*/
 * {
     box-sizing: border-box;
 }
@@ -18,34 +18,66 @@ form{
     padding: 20px;
 }
 
-form h3{
+form h3 {
     text-align: center;
 }
 
+/*Foi preciso colocar o margin-bottom nesse parâmetro, por conta do position (Parte 1)*/
 form .input-container{
     position: relative;
+    margin-bottom: 15px;
 }
 
 form .input-container input, input[type="submit"] {
     width: 100%;
     height: 45px;
     border-radius: 25px;
+ 
 }
 
+form input[type="submit"] {
+    border: 0;
+    background: red;
+    color: white;
+    font-weight: bold;
+}
+
+/*Se o elemento margin-botton for colocado abaixo o svg vai se mover (Parte 2)*/
 form .input-container input {
     border: 1px solid grey;
-    color: rgb(194, 189, 189);
-    padding:  0 25px;
-
+    color: rgb(40, 40, 41);
+    padding:  0 55px 0 25px;
+    
 }
 
 form .input-container input::placeholder {
-    color: rgb(124, 124, 126);
+    color: rgb(40, 40, 41);
 }
 
+/*Para quee o elemento top calc funcione é preciso que o tenha o elemento 
+position relative para a div e no elemento que conter o top é position absolut*/
 svg {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: calc(50% - 12px);
-    color: rgb(124, 124, 126);
+    color: rgb(40, 40, 41);
+}
+
+.options-container {
+    padding: 0 20px;
+    margin: 20px auto;
+    color: rgb(40, 40, 41);;
+}
+
+.options-container .checkbox-container, a{
+    display: inline-block;
+    width: 50%;
+   
+ 
+}
+
+.options-container a {
+    text-align: right;
+    color: red;
+    text-decoration: none;
 }

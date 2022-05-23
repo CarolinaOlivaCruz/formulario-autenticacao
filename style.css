@@ -3,18 +3,34 @@ body{
     background: rgb(184, 183, 183);
 }
 
-/*Para alinhar a margin e padding e que os elementos fiquem do mesmo tamanho é preciso usar border-box*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #EBEBEB;
+}
+
 * {
     box-sizing: border-box;
 }
 
-.form-container{
-    background: rgb(250, 249, 249);
+/* 
+ CORES
+ background: #EBEBEB;
+ cinza claro: #E4E4E4;
+ cinza inputs: #818181;
+ facebook: #375c98;
+ mail: #C54F33;
+ twitter: #4dadf2;
+*/
+
+.form-container {
+    background: white;
     margin: 150px auto;
-    width: 400px; 
+    width: 400px;
 }
 
-form{
+form {
     padding: 20px;
 }
 
@@ -22,8 +38,7 @@ form h3 {
     text-align: center;
 }
 
-/*Foi preciso colocar o margin-bottom nesse parâmetro, por conta do position (Parte 1)*/
-form .input-container{
+form .input-container {
     position: relative;
     margin-bottom: 15px;
 }
@@ -32,7 +47,6 @@ form .input-container input, input[type="submit"] {
     width: 100%;
     height: 45px;
     border-radius: 25px;
- 
 }
 
 form input[type="submit"] {
@@ -40,61 +54,83 @@ form input[type="submit"] {
     background: red;
     color: white;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-/*Se o elemento margin-botton for colocado abaixo o svg vai se mover (Parte 2)*/
 form .input-container input {
-    border: 1px solid grey;
-    color: rgb(40, 40, 41);
-    padding:  0 55px 0 25px;
-    
+    border: 1px solid #E4E4E4;
+    color: #818181;
+    padding: 0 55px 0 25px;
+    font-size: 1rem;
 }
 
 form .input-container input::placeholder {
-    color: rgb(40, 40, 41);
+    color: #818181;
 }
 
-/*Para quee o elemento top calc funcione é preciso que o tenha o elemento 
-position relative para a div e no elemento que conter o top é position absolut*/
-svg {
+form .input-container svg {
     position: absolute;
     right: 20px;
     top: calc(50% - 12px);
-    color: rgb(40, 40, 41);
+    color: #818181;
 }
 
 .options-container {
     padding: 0 20px;
-    margin: 20px auto;
-    color: rgb(40, 40, 41);;
+    margin: 25px auto;
+    color: #818181;
 }
 
-.options-container .checkbox-container, a{
+.options-container .checkbox-container, .options-container a{
     display: inline-block;
     width: 50%;
-   
- 
 }
 
-.options-container a {
+a {
     text-align: right;
     color: red;
     text-decoration: none;
 }
 
-form .social-media-container{
-    margin: 20px auto; 
+form p {
+    color: #818181;
+    text-align: center;
+}
+
+form .social-media-container {
+    margin: 20px auto;
     width: fit-content;
 }
 
-
-form .social-media-container .icon-container{
-   display: inline-block;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   position: relative;
+form .social-media-container .icon-container {
+    background: #375c98;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
 }
-form .social-media-container .icon-container:nth-child(2){
-    background: rgb(146, 195, 241);
+
+form .social-media-container .icon-container:nth-child(2) {
+    background: #C54F33;
+}
+
+form .social-media-container .icon-container:nth-child(3) {
+    background: #4dadf2;
+}
+
+form .social-media-container .icon-container svg {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    color: white;
+}
+
+hr {
+    color: #818181;
+}
+
+.footer {
+    width: fit-content;
+    margin: 20px auto;
 }

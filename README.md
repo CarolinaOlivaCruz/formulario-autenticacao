@@ -1,5 +1,5 @@
 # formulario-autenticacao
-# Projeto SingIn
+# Projeto Autenticação
 
 Esse projeto foi construído com base no curso Frontstart, com o objetivo de aprender HTML e CSS em um formulário de autenticação.
 ### Aprendizados

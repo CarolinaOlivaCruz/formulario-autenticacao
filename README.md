@@ -1,7 +1,10 @@
 # formulario-autenticacao
 # Projeto Autenticação
+<<<<<<< Updated upstream
 ![print](https://user-images.githubusercontent.com/78989471/169918941-0be9cb66-d149-4dc1-a136-b9783d2e9585.png)
 
+=======
+>>>>>>> Stashed changes
 
 Esse projeto foi construído com base no curso Frontstart, com o objetivo de aprender HTML e CSS em um formulário de autenticação.
 ### Aprendizados
